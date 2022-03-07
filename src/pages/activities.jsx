@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+import {activities} from '../data'
 
 const Activities = ({user}) => {
 
@@ -11,12 +12,6 @@ const Activities = ({user}) => {
         }
     } */
 
-    const [userActivities, setUserActivities] = useState({});
-
-    useEffect(() => {
-        setUserActivities(user.activities)
-    }, [user.activities]);
-
   return (
     <div>
         <h1>Activities</h1>
@@ -24,13 +19,12 @@ const Activities = ({user}) => {
         <img src={user.image} alt="profile" />
         <p>Recent Activities: </p>
         <ul>
-            {
-                userActivities.map(activity => (
-                    <div>
-                        <li>{activity.name}</li>
-                    </div>
-                ))
-            }
+            {activities.map((activity) => (
+                <li key={activity.id}>
+                    <p>{activity.name}</p>
+                    <img src={activity.image} alt="activity"/>
+                </li>
+            ))}
         </ul>
     </div>
   )
