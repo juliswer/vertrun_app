@@ -3,6 +3,7 @@ import {Routes, Route, useNavigate} from 'react-router-dom';
 import Stats from './pages/stats';
 import Activities from './pages/activities';
 import axios from 'axios'
+import {data} from './data';
 
 const App = () => {
 
@@ -10,7 +11,7 @@ const App = () => {
 
   const navigation = useNavigate();
 
-  const httpPet = async () => {
+  /* const httpPet = async () => {
     
     try {
       const res = await axios.get('https://www.strava.com/api/v3/athlete', { headers: {"Authorization" : `Bearer 2a1250b9070c7d374f1a0c5bb1344bca194b3469`} });
@@ -18,12 +19,13 @@ const App = () => {
     } catch (error) {
       console.log('Error: ', error);
     }
-  }
+  } */
 
   useEffect(() => {
-    httpPet()
-    if(!infoUser) alert('no user found')
-    if(window.location.pathname === '/') navigation('/activities')
+    /* httpPet()
+    if(!infoUser) alert('no user found') */
+    if(window.location.pathname === '/') navigation('/activities') 
+    setInfoUser(data)
   }, []);
 
   return (
