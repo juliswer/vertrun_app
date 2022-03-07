@@ -28,7 +28,7 @@ const Activities = ({user}) => {
             </div>
             </div>
             <h4 className="text-white text-2xl">These are the activities from {user.name} {user.lastname}:</h4>
-            <p>Recent Activities: </p>
+            <p className="text-white my-2">Recent Activities: </p>
             <ul>
                 {activities.map((activity) => (
                     <li key={activity.id}>
