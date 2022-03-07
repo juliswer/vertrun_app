@@ -1,7 +1,6 @@
-import {useEffect} from 'react';
-import axios from 'axios'
+import {useEffect, useState} from 'react';
 
-const activities = ({user}) => {
+const Activities = ({user}) => {
 
     /* const httpPet = async () => {
         try {
@@ -12,14 +11,29 @@ const activities = ({user}) => {
         }
     } */
 
+    const [userActivities, setUserActivities] = useState({});
+
+    useEffect(() => {
+        setUserActivities(user.activities)
+    }, [user.activities]);
+
   return (
     <div>
         <h1>Activities</h1>
         <h4>These are the activities from {user.name} {user.lastname}</h4>
-        
-        <button onClick={() => console.log(user)}>people</button>
+        <img src={user.image} alt="profile" />
+        <p>Recent Activities: </p>
+        <ul>
+            {
+                userActivities.map(activity => (
+                    <div>
+                        <li>{activity.name}</li>
+                    </div>
+                ))
+            }
+        </ul>
     </div>
   )
 }
 
-export default activities
+export default Activities
