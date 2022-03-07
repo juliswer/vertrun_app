@@ -17,25 +17,27 @@ const Activities = ({user}) => {
   return (
     <div className="container mx-auto">
             <h1 className="text-3xl font-bold my-5 text-white">Activities</h1>
-            <div class="mx-auto max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-            <div class="flex flex-col items-center pb-10">
-            <img class="mb-3 w-24 h-24 rounded-full shadow-lg mt-3" src={user.image} alt="Bonnie image"/>
-            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">{user.name}</h5>
-            <span class="text-sm text-gray-500 dark:text-gray-400">📌 {user.city}</span>
-            <div class="flex mt-4 space-x-3 lg:mt-6">
+            <div className="mx-auto max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div className="flex flex-col items-center pb-10">
+            <img className="mb-3 w-24 h-24 rounded-full shadow-lg mt-3" src={user.image} alt="Bonnie image"/>
+            <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">{user.name}</h5>
+            <span className="text-sm text-gray-500 dark:text-gray-400">📌 {user.city}</span>
+            <div className="flex mt-4 space-x-3 lg:mt-6">
                 <a href={userInfo.id ? `https://strava.com/athletes/${userInfo.id}` : 'https://www.strava.com/athletes/99855324'} class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank">Follow on Strava</a>
             </div>
             </div>
             </div>
             <h4 className="text-white text-2xl">These are the activities from {user.name} {user.lastname}:</h4>
-            <p className="text-white my-2">Recent Activities: </p>
+            <p className="text-white my-2">Recent Activities:</p>
             <ul>
+                <div className="grid grid-cols-4">
                 {activities.map((activity) => (
-                    <li key={activity.id}>
-                        <p>{activity.name}</p>
-                        <img src={activity.image} alt="activity"/>
-                    </li>
+                        <a className="mx-2 block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{activity.name}</h5>
+                            <p className="font-normal text-gray-700 dark:text-gray-400">{activity.distance}</p>
+                        </a>
                 ))}
+                </div>
             </ul>
     </div>
   )
