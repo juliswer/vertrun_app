@@ -27,14 +27,18 @@ const Activities = ({user}) => {
             </div>
             </div>
             </div>
-            <h4 className="text-white text-2xl">These are the activities from {user.name} {user.lastname}:</h4>
+            <h4 className="text-white text-2xl my-5">These are the activities from {user.name} {user.lastname}:</h4>
             <p className="text-white my-2">Recent Activities:</p>
             <ul>
                 <div className="grid grid-cols-4">
                 {activities.map((activity) => (
                         <a className="mx-2 block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                            <img src={activity.image} className="rounded-lg shadow-lg mb-4" alt="" />
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{activity.name}</h5>
                             <p className="font-normal text-gray-700 dark:text-gray-400">{activity.distance}</p>
+                            <p className="font-normal text-gray-700 dark:text-gray-400">Last Done: {activity.date}</p>
+                            <p className="font-normal text-gray-700 dark:text-gray-400">{activity.time}</p>
+                            <p className="font-normal text-gray-700 dark:text-gray-400">{activity.elevationGain}</p>
                         </a>
                 ))}
                 </div>
