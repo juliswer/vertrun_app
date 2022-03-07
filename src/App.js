@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from 'react'
+import {Routes, Route, useNavigate} from 'react-router-dom';
+import Stats from './pages/stats';
+import Activities from './pages/activities';
+import axios from 'axios'
 
-function App() {
+const App = () => {
+
+  const [infoUser, setInfoUser] = useState({});
+
+  const navigation = useNavigate();
+
+  const httpPet = async () => {
+    
+    try {
+      const res = await axios.get('https://www.strava.com/api/v3/athlete', { headers: {"Authorization" : `Bearer 2a1250b9070c7d374f1a0c5bb1344bca194b3469`} });
+      setInfoUser(res.data)  
+    } catch (error) {
+      console.log('Error: ', error);
+    }
+  }
+
+  useEffect(() => {
+    httpPet()
+    if(!infoUser) alert('no user found')
+    if(window.location.pathname === '/') navigation('/activities')
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>This is the page</h2>
+      <Routes>
+      {/* <div>
+      <h1>This is the page</h1>
+      <div>
+        <p>This is the page of {infoUser.firstname} {infoUser.lastname}</p>
+      </div>
+      </div> */}
+      <Route path="/activities" element={<Activities user={infoUser} />} />
+      <Route path="/stats/:id" element={<Stats />} />
+    </Routes>
     </div>
-  );
+  )
 }
 
 export default App;
