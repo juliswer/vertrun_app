@@ -33,5 +33,14 @@ export const activities = [
         distance: "5km",
         time: "30min",
         elevationGain: "1200cal",
+    },
+    {
+        id: 4,
+        name: "Boxing",
+        image: 'https://static.dw.com/image/59131461_403.jpg',
+        date: '2022-02-15',
+        distance: 'NaN',
+        time: '2h',
+        elevationGain: '2000cal'
     }
 ]

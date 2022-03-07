@@ -4,6 +4,7 @@ import Stats from './pages/stats';
 import Activities from './pages/activities';
 import axios from 'axios'
 import {data} from './data';
+import Navbar from './components/Navbar'
 
 const App = () => {
 
@@ -30,7 +31,7 @@ const App = () => {
 
   return (
     <div>
-      <h2>This is the page</h2>
+      <Navbar user={infoUser} />
       <Routes>
       {/* <div>
       <h1>This is the page</h1>
