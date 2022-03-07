@@ -39,7 +39,6 @@ export const activities = [
         name: "Boxing",
         image: 'https://static.dw.com/image/59131461_403.jpg',
         date: '15th February, 2022',
-        distance: 'NaN',
         time: '2h',
         elevationGain: '2000cal'
     }
