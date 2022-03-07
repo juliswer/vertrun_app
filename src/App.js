@@ -40,7 +40,7 @@ const App = () => {
       </div>
       </div> */}
       <Route path="/activities" element={<Activities user={infoUser} />} />
-      <Route path="/stats/:id" element={<Stats />} />
+      <Route path="/stats" element={<Stats />} />
     </Routes>
     </div>
   )
