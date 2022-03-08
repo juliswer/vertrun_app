@@ -10,7 +10,7 @@ export const activities = [
     {
         id: 1,
         name: 'Running',
-        image: 'data:image/jpeg;base64,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',
+        image: 'https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/07/running.jpg?itok=Ff4r_KSK',
         date: '5th January, 2022',
         distance: "10km",
         time: "1h 30min",
@@ -41,5 +41,134 @@ export const activities = [
         date: '15th February, 2022',
         time: '2h',
         elevationGain: '2000cal'
+    }
+]
+
+export const lastMonths = [
+    {
+        month: 'January',
+        effectivityTotal: '75%',
+        time: '8h 30min',
+        activities: [
+            {
+                id: 1,
+                name: 'Running',
+                image: 'https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/07/running.jpg?itok=Ff4r_KSK',
+                distance: "80km",
+                time: "10h 32min",
+                effectivity: '70%',
+                elevationGain: "8000cal",
+            },
+            {
+                id: 2,
+                name: "Cycling",
+                image: 'https://cdn.mos.cms.futurecdn.net/foejuANBeiCtYkT6PaXW9F-768-80.jpg',
+                distance: "160km",
+                time: "11h 30min",
+                effectivity: '83%',
+                elevationGain: "7500cal",
+            },
+            {
+                id: 3,
+                name: "Swimming",
+                image: 'https://salfordcommunityleisure.co.uk/wp-content/uploads/2021/06/Swimming-WEB.png',
+                distance: "60km",
+                time: "8h 30min",
+                effectivity: '76%',
+                elevationGain: "6200cal",
+            },
+            {
+                id: 4,
+                name: "Boxing",
+                image: 'https://static.dw.com/image/59131461_403.jpg',
+                effectivity: '60%',
+                time: '7h 40min',
+                elevationGain: '7000cal'
+            }
+        ]
+    },
+    {
+        month: 'February',
+        effectivityTotal: '75%',
+        time: '8h 30min',
+        activities: [
+            {
+                id: 1,
+                name: 'Running',
+                image: 'https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/07/running.jpg?itok=Ff4r_KSK',
+                distance: "80km",
+                time: "10h 32min",
+                effectivity: '70%',
+                elevationGain: "8000cal",
+            },
+            {
+                id: 2,
+                name: "Cycling",
+                image: 'https://cdn.mos.cms.futurecdn.net/foejuANBeiCtYkT6PaXW9F-768-80.jpg',
+                distance: "160km",
+                time: "11h 30min",
+                effectivity: '83%',
+                elevationGain: "7500cal",
+            },
+            {
+                id: 3,
+                name: "Swimming",
+                image: 'https://salfordcommunityleisure.co.uk/wp-content/uploads/2021/06/Swimming-WEB.png',
+                distance: "60km",
+                time: "8h 30min",
+                effectivity: '76%',
+                elevationGain: "6200cal",
+            },
+            {
+                id: 4,
+                name: "Boxing",
+                image: 'https://static.dw.com/image/59131461_403.jpg',
+                effectivity: '60%',
+                time: '7h 40min',
+                elevationGain: '7000cal'
+            }
+        ]
+    },
+    {
+        month: 'March',
+        effectivityTotal: '75%',
+        time: '8h 30min',
+        activities: [
+            {
+                id: 1,
+                name: 'Running',
+                image: 'https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/07/running.jpg?itok=Ff4r_KSK',
+                distance: "80km",
+                time: "10h 32min",
+                effectivity: '70%',
+                elevationGain: "8000cal",
+            },
+            {
+                id: 2,
+                name: "Cycling",
+                image: 'https://cdn.mos.cms.futurecdn.net/foejuANBeiCtYkT6PaXW9F-768-80.jpg',
+                distance: "160km",
+                time: "11h 30min",
+                effectivity: '83%',
+                elevationGain: "7500cal",
+            },
+            {
+                id: 3,
+                name: "Swimming",
+                image: 'https://salfordcommunityleisure.co.uk/wp-content/uploads/2021/06/Swimming-WEB.png',
+                distance: "60km",
+                time: "8h 30min",
+                effectivity: '76%',
+                elevationGain: "6200cal",
+            },
+            {
+                id: 4,
+                name: "Boxing",
+                image: 'https://static.dw.com/image/59131461_403.jpg',
+                effectivity: '60%',
+                time: '7h 40min',
+                elevationGain: '7000cal'
+            }
+        ]
     }
 ]
