@@ -1,5 +1,5 @@
 export const data = {
-    name: "Julian", 
+    name: "Julián", 
     lastname: "Swerdlin",
     image: 'https://img.a.transfermarkt.technology/portrait/big/28003-1631171950.jpg?lm=1',
     age: "17",
