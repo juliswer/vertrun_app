@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {useParams} from 'react-router-dom'
+import {Link, useParams} from 'react-router-dom'
 import {lastMonths} from '../data';
 
 const MonthStats = () => {
@@ -22,9 +22,8 @@ const MonthStats = () => {
 
 
   return (
-    <div>
-        <h1 className="text-white">Month Stats</h1>
-        <h2 className="text-white">{monthInfo.month}</h2>
+    <div className="mx-auto container">
+        <h1 className="text-3xl font-bold my-5 text-white">Activities from <Link to="/stats"><a className="underline">{monthInfo.month}</a></Link></h1>
     </div>
   )
 }
