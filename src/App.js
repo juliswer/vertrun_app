@@ -8,7 +8,7 @@ import Navbar from './components/Navbar'
 
 const App = () => {
 
-  const [infoUser, setInfoUser] = useState({});
+  const [infoUser, setInfoUser] = useState([]);
 
   const navigation = useNavigate();
 
@@ -27,6 +27,9 @@ const App = () => {
     if(!infoUser) alert('no user found') */
     if(window.location.pathname === '/') navigation('/activities') 
     setInfoUser(data)
+    if(infoUser === [] || data === []) {
+      alert('User not found')
+    }
   }, []);
 
   return (
