@@ -12,12 +12,15 @@ const Stats = ({user}) => {
       <div className="grid grid-cols-3">
       {lastMonths.map((month) => (
         <div className="hover:scale-110 ease-in duration-200 mx-2 block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700" key={month.month}>
+          <img src={month.image} className="rounded-lg shadow-lg mb-4" alt="" />
           <h2 className="text-white text-2xl font-bold">{month.month}</h2>
           <h3 className="text-white font-bold">{month.time}</h3>
           <h3 className="text-white font-bold">{month.effectivityTotal}</h3>
           {
             month.activities.map((activity) => (
-              <p>{activity.name}</p>
+              <div key={activity.id}>
+                <p>{activity.name}</p>
+              </div>
             ))
           }
         </div>
