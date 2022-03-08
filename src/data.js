@@ -44,8 +44,144 @@ export const activities = [
     }
 ]
 
+
 export const lastMonths = [
-    {
+
+        {
+            month: 'January',
+            effectivityTotal: '75',
+            image: 'https://thumbs.dreamstime.com/b/man-doing-exercises-healthy-lifestyle-sport-concepts-exercise-185038512.jpg',
+            time: '37h 32min',
+            activities: [
+                {
+                    id: 1,
+                    name: 'Running',
+                    distance: "80km",
+                    time: "10h 32min",
+                    effectivity: '70%',
+                    elevationGain: "8000cal",
+                },
+                {
+                    id: 2,
+                    name: "Cycling",
+                    distance: "160km",
+                    time: "11h 30min",
+                    effectivity: '83%',
+                    elevationGain: "7500cal",
+                },
+                {
+                    id: 3,
+                    name: "Swimming",
+                    distance: "60km",
+                    time: "8h 30min",
+                    effectivity: '76%',
+                    elevationGain: "6200cal",
+                },
+                {
+                    id: 4,
+                    name: "Boxing",
+                    effectivity: '60%',
+                    time: '7h 40min',
+                    elevationGain: '7000cal'
+                }
+            ]
+        },
+    
+
+        {
+            month: 'February',
+            effectivityTotal: '85',
+            time: '38h 22min',
+            image: 'https://s3.envato.com/files/255345469/EE4I3060%20copy.jpg',
+            activities: [
+                {
+                    id: 1,
+                    name: 'Running',
+                    image: 'https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/07/running.jpg?itok=Ff4r_KSK',
+                    distance: "60km",
+                    time: "8h 32min",
+                    effectivity: '65%',
+                    elevationGain: "7000cal",
+                },
+                {
+                    id: 2,
+                    name: "Cycling",
+                    image: 'https://cdn.mos.cms.futurecdn.net/foejuANBeiCtYkT6PaXW9F-768-80.jpg',
+                    distance: "180km",
+                    time: "12h 30min",
+                    effectivity: '89%',
+                    elevationGain: "9500cal",
+                },
+                {
+                    id: 3,
+                    name: "Swimming",
+                    image: 'https://salfordcommunityleisure.co.uk/wp-content/uploads/2021/06/Swimming-WEB.png',
+                    distance: "70km",
+                    time: "9h 30min",
+                    effectivity: '80%',
+                    elevationGain: "6800cal",
+                },
+                {
+                    id: 4,
+                    name: "Boxing",
+                    image: 'https://static.dw.com/image/59131461_403.jpg',
+                    effectivity: '70%',
+                    time: '8h 30min',
+                    elevationGain: '7600cal'
+                }
+            ],
+        },
+    
+
+        {
+            month: 'March',
+            effectivityTotal: '70',
+            time: '32h 50min',
+            image: 'https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/02/man-exercising-plank-push-up-1296x728-header-1296x728.jpg?w=1155&h=1528',
+            activities: [
+                {
+                    id: 1,
+                    name: 'Running',
+                    image: 'https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/07/running.jpg?itok=Ff4r_KSK',
+                    distance: "70km",
+                    time: "10h",
+                    effectivity: '60%',
+                    elevationGain: "7000cal",
+                },
+                {
+                    id: 2,
+                    name: "Cycling",
+                    image: 'https://cdn.mos.cms.futurecdn.net/foejuANBeiCtYkT6PaXW9F-768-80.jpg',
+                    distance: "130km",
+                    time: "9h 25min",
+                    effectivity: '83%',
+                    elevationGain: "7500cal",
+                },
+                {
+                    id: 3,
+                    name: "Swimming",
+                    image: 'https://salfordcommunityleisure.co.uk/wp-content/uploads/2021/06/Swimming-WEB.png',
+                    distance: "40km",
+                    time: "6h 25min",
+                    effectivity: '70%',
+                    elevationGain: "5200cal",
+                },
+                {
+                    id: 4,
+                    name: "Boxing",
+                    image: 'https://static.dw.com/image/59131461_403.jpg',
+                    effectivity: '50%',
+                    time: '7h',
+                    elevationGain: '5000cal'
+                }
+            ]
+        }
+
+]
+
+/* export const lastMonths2 = [
+    [
+        {
         month: 'January',
         effectivityTotal: '75',
         image: 'https://thumbs.dreamstime.com/b/man-doing-exercises-healthy-lifestyle-sport-concepts-exercise-185038512.jpg',
@@ -83,8 +219,10 @@ export const lastMonths = [
                 elevationGain: '7000cal'
             }
         ]
-    },
-    {
+    }
+    ],
+    [
+        {
         month: 'February',
         effectivityTotal: '85',
         time: '38h 22min',
@@ -125,8 +263,10 @@ export const lastMonths = [
                 time: '8h 30min',
                 elevationGain: '7600cal'
             }
-        ]
+        ],
     },
+    ],
+    [
     {
         month: 'March',
         effectivityTotal: '70',
@@ -170,4 +310,4 @@ export const lastMonths = [
             }
         ]
     }
-]
+] */

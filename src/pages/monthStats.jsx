@@ -1,8 +1,31 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import {useParams} from 'react-router-dom'
+import {lastMonths} from '../data';
 
 const MonthStats = () => {
+
+    const [monthInfo, setMonthInfo] = useState({});
+
+    const {month} = useParams();
+
+    const compareMonth = month.charAt(0).toUpperCase() + month.slice(1)
+
+    const result = lastMonths.filter(realMonth => realMonth.month === compareMonth)
+
+    const loadMonthInfo = () => {
+        setMonthInfo(result[0])
+    }
+    
+    useEffect(() => {
+        loadMonthInfo()
+    }, []);
+
+
   return (
-    <div className="text-white">monthStats</div>
+    <div>
+        <h1 className="text-white">Month Stats</h1>
+        <h2 className="text-white">{monthInfo.month}</h2>
+    </div>
   )
 }
 
