@@ -5,6 +5,7 @@ import Activities from './pages/activities';
 import axios from 'axios'
 import {data} from './data';
 import Navbar from './components/Navbar'
+import MonthStats from './pages/monthStats';
 
 const App = () => {
 
@@ -44,6 +45,7 @@ const App = () => {
       </div> */}
       <Route path="/activities" element={<Activities user={infoUser} />} />
       <Route path="/stats" element={<Stats user={infoUser} />} />
+      <Route path="/stats/:month" element={<MonthStats user={infoUser} />}/>
     </Routes>
     </div>
   )

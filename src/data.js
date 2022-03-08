@@ -47,7 +47,7 @@ export const activities = [
 export const lastMonths = [
     {
         month: 'January',
-        effectivityTotal: '75%',
+        effectivityTotal: '75',
         image: 'https://thumbs.dreamstime.com/b/man-doing-exercises-healthy-lifestyle-sport-concepts-exercise-185038512.jpg',
         time: '37h 32min',
         activities: [
@@ -86,7 +86,7 @@ export const lastMonths = [
     },
     {
         month: 'February',
-        effectivityTotal: '85%',
+        effectivityTotal: '85',
         time: '38h 22min',
         image: 'https://s3.envato.com/files/255345469/EE4I3060%20copy.jpg',
         activities: [
@@ -129,7 +129,7 @@ export const lastMonths = [
     },
     {
         month: 'March',
-        effectivityTotal: '70%',
+        effectivityTotal: '70',
         time: '32h 50min',
         image: 'https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/02/man-exercising-plank-push-up-1296x728-header-1296x728.jpg?w=1155&h=1528',
         activities: [
